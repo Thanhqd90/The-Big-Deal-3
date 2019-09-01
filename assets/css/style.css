@@ -10,6 +10,13 @@ h4 {
 	font: 'MisoRegular';
 }
 
+h2.tbd4-head,
+h4.tbd4-sub {
+	text-shadow: 0 0 5px #e5e5e5, 0 0 10px #e5e5e5, 0 0 15px #e5e5e5, 0 0 20px #e691e4, 0 0 30px #e691e4, 0 0 40px #e691e4, 0 0 50px #e691e4, 0 0 75px #e691e4;
+	letter-spacing: 5px;
+	font: 'MisoRegular';
+}
+
 .event {
     height: 75%;
     margin: auto;
