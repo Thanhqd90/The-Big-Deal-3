@@ -35,3 +35,7 @@ h4.tbd4-sub {
     height: 70%;
     width: 100%
 }
+
+.nav-flex-icons {
+    justify-content: flex-end;
+}

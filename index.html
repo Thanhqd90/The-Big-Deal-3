@@ -7,7 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>The Big Deal</title>
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 	<!-- css -->
 	<link rel="stylesheet" href="./assets/css/reset.css" />
 	<!-- Bootstrap core CSS -->
@@ -104,7 +104,7 @@
 					<!-- Right side of Navbar -->
 					<ul class="navbar-nav nav-flex-icons">
 						<li class="nav-item">
-							<a href="https://www.facebook.com/TheBigDealGaming/" target="_blank" class="nav-link">
+							<a href="https://www.facebook.com/events/521538658618550/" target="_blank" class="nav-link">
 								<img src="./assets/images/facebook.png" height="25px"></a>
 						</li>
 						<li class="nav-item">
@@ -138,17 +138,13 @@
 									
 									<h2 class="tbd4-head font-weight-bold display-3 mb-0">The Big Deal 4:<br/> Dallas Evolved</h2>
 									<hr class="hr-light my-3 clearfix d-none d-md-block">
-									<h4 class="pt-2 pb-3 tbd4-sub">Details coming soon</h4>
-									<!-- <h4 class="pt-2 pb-3 tbd4-sub"><i class="fa fa-calendar"></i> March 29th - March 31st, 2019</h4> -->
-									<!-- <h4 id="time-counter" class="border border-light my-4"></h4> -->
-								</div>
-<!-- 
-								<a href="#event" class="btn btn-blue-pink btn-rounded">
-									<span>View Featured Tournaments</span></a>
-
-								<a href="#register" class="btn btn-pink-blue btn-rounded">
-									<span>Click here to register!!</span></a> -->
-
+									<!-- <h4 class="pt-2 pb-3 tbd4-sub">Details coming soon</h4> -->
+									<h4 class="pt-2 pb-3 tbd4-sub"><i class="fa fa-calendar"></i> March 27th - March 29th, 2020</h4>
+									<h4 id="time-counter" class="border border-light my-4"></h4>
+							<a href="https://www.facebook.com/events/521538658618550/" target="_blank" class="btn btn-block btn-blue mb-3">
+								<i class="fab fa-facebook-square fa-lg"></i> Facebook Event Page</a>
+							<a href="https://discord.gg/UzvQyew" target="_blank" class="btn btn-block btn-grey">
+								<i class="fab fa-discord fa-lg"></i> Discord Channel</a>
 							</div>
 						</div>
 						<!--Grid Column-->
@@ -163,6 +159,41 @@
 			<img src="./assets/images/tbd3-group.jpg" class="img-fluid z-depth-1-half" style="margin-top:8rem" alt="My photo 1">
 		</div>		
 	</main>
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="./assets/javascript/jquery-3.3.1.min.js"></script>
+	<!-- Tooltips -->
+	<script type="text/javascript" src="./assets/javascript/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="./assets/javascript/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="./assets/javascript/mdb.min.js"></script>
+
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Mar 27, 2020 17:00:00");
+		countDownDate.setDate(countDownDate.getDate());
+		// Update the count down every 1 second
+		var x = setInterval(function () {
+			// Get todays date and time
+			var now = new Date().getTime();
+			// Find the distance between now an the count down date
+			var distance = countDownDate - now;
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			// Display the result in the element with id="demo"
+			document.getElementById("time-counter").innerHTML = days + "d " + hours + "h " +
+				minutes + "m " + seconds + "s ";
+			// If the count down is finished, write some text
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("time-counter").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
 </body>
 
 </html>
