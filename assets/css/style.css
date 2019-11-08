@@ -39,3 +39,9 @@ h4.tbd4-sub {
 .nav-flex-icons {
     justify-content: flex-end;
 }
+
+@media (max-width: 992px) {
+.nav-flex-icons {
+    justify-content: center;
+}
+}
